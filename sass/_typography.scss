@@ -1,0 +1,30 @@
+@use 'base' as *;
+
+%heading {
+    font-family: $font-display;
+    font-weight: 400;
+}
+
+.heading {
+    &-1 {
+        @extend %heading;
+    }
+    &-2 {
+        @extend %heading;
+    }
+    &-3 {
+        @extend %heading;
+    }
+    &-4 {
+        font-size: 1.9rem;
+        @extend %heading;
+
+        &--light {
+            color: $grey-light-1;
+        }
+
+        &--dark {
+            color: $grey-dark-1;
+        }
+    }
+}
